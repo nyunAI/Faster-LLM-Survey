@@ -1,10 +1,9 @@
-# generates different outputs from llamacpp
 METHOD=engine/llamacpp
 METHOD_PATH=$METHOD/llama.cpp
 
 MODEL_NAME=Llama-2-7b-hf
 MODEL_PATH=model/$MODEL_NAME
-EXPORTS=$MODEL_PATH/exports
+EXPORTS=exports/$MODEL_NAME
 METHOD_EXPORTS=$EXPORTS/$METHOD
 
 mkdir -p $METHOD_EXPORTS

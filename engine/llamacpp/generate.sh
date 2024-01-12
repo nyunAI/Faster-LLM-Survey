@@ -4,7 +4,7 @@ METHOD_PATH=$METHOD/llama.cpp
 
 MODEL_NAME=Llama-2-7b-hf
 MODEL_PATH=model/$MODEL_NAME
-EXPORTS=$MODEL_PATH/exports
+EXPORTS=exports/$MODEL_NAME
 METHOD_EXPORTS=$EXPORTS/$METHOD
 
 mkdir -p $METHOD_EXPORTS
@@ -36,3 +36,5 @@ MODEL_Q4_K_M_GGUF=$METHOD_EXPORTS/ggml-model-q4_k_m.gguf
 start_mem_tracker "quantize_q4_k_m"
 $METHOD_PATH/quantize $MODEL_GGUF $MODEL_Q4_K_M_GGUF q4_k_m
 killall nvidia-smi
+
+# TODO: add awq and gptq

@@ -1,5 +1,5 @@
 # generates different outputs from llamacpp
-METHOD=llamacpp
+METHOD=engine/llamacpp
 METHOD_PATH=$METHOD/llama.cpp
 
 MODEL_NAME=Llama-2-7b-hf

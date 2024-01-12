@@ -4,3 +4,6 @@
 [submodule "engine/llamacpp/llama.cpp"]
 	path = engine/llamacpp/llama.cpp
 	url = https://github.com/ggerganov/llama.cpp
+[submodule "engine/exllama/exllama"]
+	path = engine/exllama/exllama
+	url = https://github.com/turboderp/exllama

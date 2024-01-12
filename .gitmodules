@@ -1,0 +1,3 @@
+[submodule "model/Llama-2-7b-hf"]
+	path = model/Llama-2-7b-hf
+	url = https://huggingface.co/meta-llama/Llama-2-7b-hf

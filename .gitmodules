@@ -10,3 +10,6 @@
 [submodule "engine/exllamav2/exllamav2"]
 	path = engine/exllamav2/exllamav2
 	url = https://github.com/turboderp/exllamav2
+[submodule "datasets/alpaca-cleaned"]
+	path = datasets/alpaca-cleaned
+	url = https://huggingface.co/datasets/yahma/alpaca-cleaned

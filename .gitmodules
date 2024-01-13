@@ -7,3 +7,6 @@
 [submodule "engine/exllama/exllama"]
 	path = engine/exllama/exllama
 	url = https://github.com/turboderp/exllama
+[submodule "engine/exllamav2/exllamav2"]
+	path = engine/exllamav2/exllamav2
+	url = https://github.com/turboderp/exllamav2

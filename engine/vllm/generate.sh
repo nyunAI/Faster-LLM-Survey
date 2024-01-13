@@ -1,0 +1,1 @@
+echo "generate the quantized outputs from gptq, awq, squeezellm"

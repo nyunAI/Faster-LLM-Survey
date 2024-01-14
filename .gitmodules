@@ -13,3 +13,9 @@
 [submodule "datasets/alpaca-cleaned"]
 	path = datasets/alpaca-cleaned
 	url = https://huggingface.co/datasets/yahma/alpaca-cleaned
+[submodule "quant/squeezellm/squeezellm"]
+	path = quant/squeezellm/squeezellm
+	url = https://github.com/SqueezeAILab/SqueezeLLM
+[submodule "quant/squeezellm/squeezellmgradients"]
+	path = quant/squeezellm/squeezellmgradients
+	url = https://github.com/kssteven418/SqueezeLLM-gradients.git

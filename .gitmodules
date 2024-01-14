@@ -19,3 +19,6 @@
 [submodule "quant/squeezellm/squeezellmgradients"]
 	path = quant/squeezellm/squeezellmgradients
 	url = https://github.com/kssteven418/SqueezeLLM-gradients.git
+[submodule "quant/omniquant/omniquant"]
+	path = quant/omniquant/omniquant
+	url = https://github.com/OpenGVLab/OmniQuant.git

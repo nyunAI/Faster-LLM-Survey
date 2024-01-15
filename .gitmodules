@@ -25,3 +25,6 @@
 [submodule "engine/mlcllm/mlcllm"]
 	path = engine/mlcllm/mlcllm
 	url = https://github.com/mlc-ai/mlc-llm.git
+[submodule "prune/llmpruner/llmpruner"]
+	path = prune/llmpruner/llmpruner
+	url = https://github.com/horseee/LLM-Pruner.git

@@ -25,6 +25,7 @@ MODEL_W3A16=$METHOD_EXPORTS/w3a16
 
 
 # bench with mlcllm/bench.sh
+# remove c4 if eval on model. Has outdated data loader implementations
 
 
 # following is for eval tasks

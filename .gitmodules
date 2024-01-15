@@ -22,3 +22,6 @@
 [submodule "quant/omniquant/omniquant"]
 	path = quant/omniquant/omniquant
 	url = https://github.com/OpenGVLab/OmniQuant.git
+[submodule "engine/mlcllm/mlcllm"]
+	path = engine/mlcllm/mlcllm
+	url = https://github.com/mlc-ai/mlc-llm.git

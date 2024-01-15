@@ -18,17 +18,17 @@ start_mem_tracker() {
     nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > $METHOD_EXPORTS/gpu_bench_mem_usage_$1.csv &
 }
 
-# # baseline
-# start_mem_tracker "baseline"
-# python $METHOD_PATH/generation_speed.py \
-# --model_name_or_path $MODEL_PATH \
-# --tokenizer_name_or_path $MODEL_PATH \
-# --from_pretrained \
-# --dataset $DATASET_PATH \
-# --use_fast \
-# # --use_triton \
-# --disable_exllama 2>&1 | tee $METHOD_EXPORTS/bench_baseline.log
-# killall nvidia-smi
+# baseline
+start_mem_tracker "baseline"
+python $METHOD_PATH/generation_speed.py \
+--model_name_or_path $MODEL_PATH \
+--tokenizer_name_or_path $MODEL_PATH \
+--from_pretrained \
+--dataset $DATASET_PATH \
+--use_fast \
+# --use_triton \
+--disable_exllama 2>&1 | tee $METHOD_EXPORTS/bench_baseline.log
+killall nvidia-smi
 
 # quantize q4-128g
 MODEL_Q4_128G=$METHOD_EXPORTS/q4_128g

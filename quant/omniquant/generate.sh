@@ -12,7 +12,6 @@ METHOD_EXPORTS=$EXPORTS/$METHOD
 OMNIQUANT_TEMP=$METHOD_EXPORTS/temp
 
 mkdir -p $METHOD_EXPORTS
-mkdir -p $OMNIQUANT_TEMP
 
 # Function to start memory tracker
 start_mem_tracker() {
@@ -39,6 +38,7 @@ python $METHOD_PATH/main.py \
 --model $MODEL_PATH \
 --epochs 1 \
 --output_dir $MODEL_W4A16 \
+--save_dir $MODEL_W4A16 \
 --calib_dataset wikitext2 \
 --act-scales $SCALE_PATH \
 --act-shifts $SHIFT_PATH \
@@ -52,6 +52,7 @@ python $METHOD_PATH/main.py \
 --model $MODEL_PATH \
 --epochs 1 \
 --output_dir $MODEL_W3A16 \
+--save_dir $MODEL_W3A16 \
 --calib_dataset wikitext2 \
 --act-scales $SCALE_PATH \
 --act-shifts $SHIFT_PATH \

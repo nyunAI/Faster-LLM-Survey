@@ -28,3 +28,7 @@
 [submodule "prune/llmpruner/llmpruner"]
 	path = prune/llmpruner/llmpruner
 	url = https://github.com/horseee/LLM-Pruner.git
+[submodule "engine/tensorrtllm/tensorrtllm"]
+	path = engine/tensorrtllm/tensorrtllm
+	url = https://github.com/NVIDIA/TensorRT-LLM.git
+	branch = release/0.5.0

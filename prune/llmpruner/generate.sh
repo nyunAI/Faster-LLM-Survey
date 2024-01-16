@@ -48,17 +48,20 @@ python $METHOD_PATH/hf_prune.py \
 --save_model
 killall nvidia-smi
 
-# post-training
-MODEL_TUNE_0_20=$MODEL_PRUNED_0_20
-start_mem_tracker "tune_0_20"
-python $METHOD_PATH/post_training.py \
---base_model $MODEL_PATH \
---prune_model $MODEL_TUNE_0_20/pytorch_model.bin \
---data_path $DATASET_PATH \
---output_dir $MODEL_TUNE_0_20 \
---wandb_project llama_tune \
---lora_r 8 \
---num_epochs 2 \
---learning_rate 1e-4 \
---batch_size 64
-killall nvidia-smi
+
+# use the docker image(tensorrtllm_trt:transformer_patched) instead
+
+# # post-training
+# MODEL_TUNE_0_20=$MODEL_PRUNED_0_20
+# start_mem_tracker "tune_0_20"
+# python $METHOD_PATH/post_training.py \
+# --base_model $MODEL_PATH \
+# --prune_model $MODEL_TUNE_0_20/pytorch_model.bin \
+# --data_path $DATASET_PATH \
+# --output_dir $MODEL_TUNE_0_20 \
+# --wandb_project llama_tune \
+# --lora_r 8 \
+# --num_epochs 2 \
+# --learning_rate 1e-4 \
+# --batch_size 64
+# killall nvidia-smi

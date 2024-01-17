@@ -1,4 +1,6 @@
 *env
-exports/
 *cache/
 wandb/
+
+# llamacpp gguf model outputs
+*.gguf

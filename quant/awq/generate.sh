@@ -15,8 +15,8 @@ start_mem_tracker() {
 }
 
 # quantize awq-gemm
-MODEL_AWQ_GEMM=$METHOD_EXPORTS/gemm
-start_mem_tracker "quantize_awq_gemm"
+MODEL_AWQ_GEMM=$METHOD_EXPORTS/w4_gemm
+start_mem_tracker "quantize_w4_gemm"
 python $METHOD_PATH/quantize.py \
 --model_path $MODEL_PATH \
 --quant_path $MODEL_AWQ_GEMM \
@@ -27,8 +27,8 @@ python $METHOD_PATH/quantize.py \
 killall nvidia-smi
 
 # quantize awq-gemv
-MODEL_AWQ_GEMV=$METHOD_EXPORTS/gemv
-start_mem_tracker "quantize_awq_gemv"
+MODEL_AWQ_GEMV=$METHOD_EXPORTS/w4_gemv
+start_mem_tracker "quantize_w4_gemv"
 python $METHOD_PATH/quantize.py \
 --model_path $MODEL_PATH \
 --quant_path $MODEL_AWQ_GEMV \

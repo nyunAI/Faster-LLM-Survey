@@ -1,0 +1,37 @@
+ -- Model: model/Llama-2-7b-hf
+ -- Options: ['gpu_split: 40']
+ -- Loading model...
+ -- Loading tokenizer...
+ -- Measuring token speed...
+ ** Position     1 + 127 tokens:   64.0094 t/s
+ ** Position   128 + 128 tokens:   68.1465 t/s
+ ** Position   256 + 128 tokens:   64.1152 t/s
+ ** Position   384 + 128 tokens:   63.8682 t/s
+ ** Position   512 + 128 tokens:   68.1374 t/s
+ ** Position   640 + 128 tokens:   69.1751 t/s
+ ** Position   768 + 128 tokens:   69.3849 t/s
+ ** Position   896 + 128 tokens:   68.6630 t/s
+ ** Position  1024 + 128 tokens:   68.6381 t/s
+ ** Position  1152 + 128 tokens:   68.5229 t/s
+ ** Position  1280 + 128 tokens:   68.3112 t/s
+ ** Position  1408 + 128 tokens:   62.5719 t/s
+ ** Position  1536 + 128 tokens:   69.1164 t/s
+ ** Position  1664 + 128 tokens:   64.2787 t/s
+ ** Position  1792 + 128 tokens:   69.2217 t/s
+ ** Position  1920 + 128 tokens:   69.1219 t/s
+ ** Position  2048 + 128 tokens:   68.9666 t/s
+ ** Position  2176 + 128 tokens:   68.7753 t/s
+ ** Position  2304 + 128 tokens:   68.4763 t/s
+ ** Position  2432 + 128 tokens:   68.3525 t/s
+ ** Position  2560 + 128 tokens:   68.3459 t/s
+ ** Position  2688 + 128 tokens:   67.7423 t/s
+ ** Position  2816 + 128 tokens:   67.1635 t/s
+ ** Position  2944 + 128 tokens:   65.9909 t/s
+ ** Position  3072 + 128 tokens:   67.1230 t/s
+ ** Position  3200 + 128 tokens:   65.6756 t/s
+ ** Position  3328 + 128 tokens:   61.1137 t/s
+ ** Position  3456 + 128 tokens:   59.0554 t/s
+ ** Position  3584 + 128 tokens:   64.7766 t/s
+ ** Position  3712 + 128 tokens:   64.4662 t/s
+ ** Position  3840 + 128 tokens:   64.2221 t/s
+ ** Position  3968 + 128 tokens:   64.4606 t/s

@@ -1,4 +1,8 @@
 *env
-exports/
+
 *cache/
 wandb/
+
+# gptq quantized model paths
+*128g/
+*exl2/

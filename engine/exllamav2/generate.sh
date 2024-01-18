@@ -27,6 +27,19 @@ python $METHOD_PATH/convert.py \
 killall nvidia-smi
 rm -rf $EXL2_TEMP/*
 
+# quantized 8.0 bpw
+MODEL_8BPW_EXL2=$METHOD_EXPORTS/8bpw-exl2
+start_mem_tracker "quantize_8bpw"
+python $METHOD_PATH/convert.py \
+    -i $MODEL_PATH \
+    -o $EXL2_TEMP \
+    -nr \
+    -m $METHOD_EXPORTS/measurement.json \
+    -cf $MODEL_8BPW_EXL2 \
+    -b 8.0
+killall nvidia-smi
+rm -rf $EXL2_TEMP/*
+
 # quantized 4.0 bpw
 MODEL_4BPW_EXL2=$METHOD_EXPORTS/4bpw-exl2
 start_mem_tracker "quantize_4bpw"
@@ -37,18 +50,5 @@ python $METHOD_PATH/convert.py \
     -m $METHOD_EXPORTS/measurement.json \
     -cf $MODEL_4BPW_EXL2 \
     -b 4.0
-killall nvidia-smi
-rm -rf $EXL2_TEMP/*
-
-# quantized 6bpw
-MODEL_6BPW_EXL2=$METHOD_EXPORTS/6bpw-exl2
-start_mem_tracker "quantize_6bpw"
-python $METHOD_PATH/convert.py \
-    -i $MODEL_PATH \
-    -o $EXL2_TEMP \
-    -nr \
-    -m $METHOD_EXPORTS/measurement.json \
-    -cf $MODEL_6BPW_EXL2 \
-    -b 6.0
 killall nvidia-smi
 rm -rf $EXL2_TEMP

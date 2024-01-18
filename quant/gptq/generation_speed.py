@@ -223,7 +223,7 @@ def benchmark_generation_speed(model, tokenizer, examples, generation_config):
     total_seconds = sum(generation_time_list)
     logger.info(
         f"generated {total_tokens} tokens using {total_seconds} seconds, "
-        f"generation speed: {total_tokens / total_seconds}tokens/s"
+        f"generation speed: {total_tokens / total_seconds} tokens/s"
     )
 
 
@@ -245,7 +245,7 @@ def main():
     parser.add_argument("--num_samples", type=int, default=10)
     parser.add_argument("--per_gpu_max_memory", type=int, default=None)
     parser.add_argument("--cpu_max_memory", type=int, default=None)
-    parser.add_argument("--max_new_tokens", type=int, default=512)
+    parser.add_argument("--max_new_tokens", type=int, default=128)
     parser.add_argument("--do_sample", action="store_true")
     parser.add_argument("--num_beams", type=int, default=1)
     args = parser.parse_args()

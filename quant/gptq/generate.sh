@@ -25,6 +25,9 @@ python $METHOD_PATH/quant_with_alpaca.py \
 --pretrained_model_dir $MODEL_PATH \
 --quantized_model_dir $MODEL_Q4_128G \
 --dataset $DATASET_PATH \
+--fast_tokenizer \
+--per_gpu_max_memory 40 \
+--cpu_max_memory 0 \
 --bits 4
 killall nvidia-smi
 
@@ -35,17 +38,10 @@ python $METHOD_PATH/quant_with_alpaca.py \
 --pretrained_model_dir $MODEL_PATH \
 --quantized_model_dir $MODEL_Q8_128G \
 --dataset $DATASET_PATH \
+--fast_tokenizer \
+--per_gpu_max_memory 40 \
+--cpu_max_memory 0 \
 --bits 8
 killall nvidia-smi
 
 
-# # quantize triton q4-128g
-# MODEL_TRT_Q4_128G=$METHOD_EXPORTS/trt_q4_128g
-# start_mem_tracker "quantize_trt_q4_128g"
-# python $METHOD_PATH/quant_with_alpaca.py \
-# --pretrained_model_dir $MODEL_PATH \
-# --quantized_model_dir $MODEL_Q4_128G \
-# --dataset $DATASET_PATH \
-# --bits 4 \
-# --use_triton
-# killall nvidia-smi

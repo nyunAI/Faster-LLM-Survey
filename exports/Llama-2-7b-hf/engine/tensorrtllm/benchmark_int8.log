@@ -1,0 +1,1 @@
+[BENCHMARK] model_name llama_7b world_size 1 num_heads 32 num_kv_heads 32 num_layers 32 hidden_size 4096 vocab_size 32000 precision float16 batch_size 1 input_length 128 output_length 128 gpu_peak_mem(gb) 9.12 build_time(s) 0 tokens_per_sec 143.57 percentile95(ms) 894.309 percentile99(ms) 902.652 latency(ms) 891.551 compute_cap sm80

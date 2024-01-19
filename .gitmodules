@@ -32,3 +32,7 @@
 	path = engine/tensorrtllm/tensorrtllm
 	url = https://github.com/NVIDIA/TensorRT-LLM.git
 	branch = release/0.5.0
+[submodule "engine/tensorrtllm/tensorrtllm_backend"]
+	path = engine/tensorrtllm/tensorrtllm_backend
+	url = https://github.com/triton-inference-server/tensorrtllm_backend.git
+	branch = release/0.5.0

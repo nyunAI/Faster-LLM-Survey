@@ -1,4 +1,10 @@
 *env
-exports/
+
 *cache/
 wandb/
+
+**.gguf
+**exl2/
+**gemm/
+**gemv/
+**q[0-9]*_[0-9]*g/

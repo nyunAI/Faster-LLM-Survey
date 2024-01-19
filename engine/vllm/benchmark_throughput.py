@@ -91,6 +91,7 @@ def run_vllm(
         top_p=1.0,
         use_beam_search=use_beam_search,
         ignore_eos=True,
+        max_tokens=128
     )
 
     start = time.perf_counter()
@@ -208,6 +209,11 @@ def main(args: argparse.Namespace):
         for response in responses
         for output in response.outputs
     ])
+    [
+        print(f"Output: {output.text}\n") 
+        for response in responses
+        for output in response.outputs
+    ]
     print(f"Generated {len(requests)} requests in {elapsed_time:.2f} seconds. ({len(requests) / elapsed_time:.2f} requests/s)")
     print(f"Generated {total_num_tokens} tokens in {elapsed_time:.2f} seconds. ({total_num_tokens / elapsed_time:.2f} tokens/s)")
 

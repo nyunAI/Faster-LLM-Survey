@@ -32,3 +32,6 @@
 	path = engine/tensorrtllm/tensorrtllm
 	url = https://github.com/NVIDIA/TensorRT-LLM.git
 	branch = release/0.5.0
+[submodule "model/squeezellm/w4-s0"]
+	path = model/squeezellm/w4-s0
+	url = https://huggingface.co/squeeze-ai-lab/sq-llama-2-7b-w4-s0

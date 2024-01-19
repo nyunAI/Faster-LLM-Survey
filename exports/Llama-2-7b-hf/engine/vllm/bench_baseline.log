@@ -1,0 +1,19 @@
+Namespace(backend='vllm', dataset='datasets/alpaca-cleaned/alpaca_data_cleaned.json', input_len=None, output_len=None, model='model/Llama-2-7b-hf', tokenizer='model/Llama-2-7b-hf', quantization=None, tensor_parallel_size=1, n=1, use_beam_search=False, num_prompts=1, seed=0, hf_max_batch_size=None, trust_remote_code=False, max_model_len=None, dtype='auto', enforce_eager=False)
+INFO 01-19 10:47:34 llm_engine.py:70] Initializing an LLM engine with config: model='model/Llama-2-7b-hf', tokenizer='model/Llama-2-7b-hf', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, quantization=None, enforce_eager=False, seed=0)
+INFO 01-19 10:47:41 llm_engine.py:275] # GPU blocks: 2800, # CPU blocks: 512
+INFO 01-19 10:47:43 model_runner.py:501] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 01-19 10:47:43 model_runner.py:505] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode.
+INFO 01-19 10:47:46 model_runner.py:547] Graph capturing finished in 3 secs.
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.63s/it]Processed prompts: 100%|██████████| 1/1 [00:01<00:00,  1.63s/it]
+Output: 
+2 Given two populations, determine a hypothesis about which one is larger
+3 Find the median and mode for a set of numbers
+4 Find the mean when multiple numbers are entered
+5 Find the average when multiple grades are entered
+6 Find the depth of a triangle with 3 sides and their corresponding lengths
+8 Find the area of a rectangle if the length and width are known
+9 Find the area of a triangle in the simple trapezoid
+10 The functions lineX and Esse(weather) do not appear to be equal when divided by (18-weather (average from 1
+
+Generated 1 requests in 1.63 seconds. (0.61 requests/s)
+Generated 130 tokens in 1.63 seconds. (79.74 tokens/s)

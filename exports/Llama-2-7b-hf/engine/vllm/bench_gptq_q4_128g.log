@@ -1,0 +1,15 @@
+Namespace(backend='vllm', dataset='datasets/alpaca-cleaned/alpaca_data_cleaned.json', input_len=None, output_len=None, model='exports/Llama-2-7b-hf/quant/gptq/q4_128g', tokenizer='exports/Llama-2-7b-hf/quant/gptq/q4_128g', quantization='gptq', tensor_parallel_size=1, n=1, use_beam_search=False, num_prompts=1, seed=0, hf_max_batch_size=None, trust_remote_code=False, max_model_len=None, dtype='auto', enforce_eager=False)
+WARNING 01-19 10:48:32 config.py:175] gptq quantization is not fully optimized yet. The speed can be slower than non-quantized models.
+INFO 01-19 10:48:32 llm_engine.py:70] Initializing an LLM engine with config: model='exports/Llama-2-7b-hf/quant/gptq/q4_128g', tokenizer='exports/Llama-2-7b-hf/quant/gptq/q4_128g', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, quantization=gptq, enforce_eager=False, seed=0)
+INFO 01-19 10:48:36 llm_engine.py:275] # GPU blocks: 3908, # CPU blocks: 512
+INFO 01-19 10:48:38 model_runner.py:501] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 01-19 10:48:38 model_runner.py:505] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode.
+INFO 01-19 10:48:42 model_runner.py:547] Graph capturing finished in 4 secs.
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.35it/s]Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.35it/s]
+Output: 
+2 Given two populations, determine a hypothesis about which one has fewer people having a particular personality characteristic. Rock climbing novice for the female youth amongst the beyond 16-year-old age scope at some stage in 2016, with 36 per cent out of the common wide variety popular, in step with a review by Leisure Team Singapore (LTS).
+This in comparison with 39 according to cent in 2015, suggesting that there has been a rise in a new leisure and corporate climbing industry in Singapore.
+LTS is
+
+Generated 1 requests in 0.74 seconds. (1.35 requests/s)
+Generated 128 tokens in 0.74 seconds. (172.88 tokens/s)

@@ -1,0 +1,19 @@
+[2024-01-20 20:23:13] INFO auto_device.py:76: [92mFound[0m device: cuda:0
+[2024-01-20 20:23:13] INFO chat_module.py:370: Using model folder: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/mlcllm/q0f16
+[2024-01-20 20:23:13] INFO chat_module.py:371: Using mlc chat config: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/mlcllm/q0f16/mlc-chat-config.json
+[2024-01-20 20:23:13] INFO chat_module.py:513: Using library model: exports/Llama-2-7b-hf/engine/mlcllm/q0f16/Llama-2-7b-hf-q0f16-cuda.so
+[2024-01-20 20:23:14] INFO model_metadata.py:90: [92mTotal memory usage[0m: 15286.52 MB (Parameters: 12852.51 MB. KVCache: 2048.00 MB. Temporary buffer: 386.01 MB)
+[2024-01-20 20:23:14] INFO model_metadata.py:99: To reduce memory usage, tweak `prefill_chunk_size`, `context_window_size` and `sliding_window_size`
+Generated text:
+What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is the meaning of life? What is
+
+Statistics:
+----------- prefill -----------
+throughput: 554.363 tok/s
+total tokens: 7 tok
+total time: 0.013 s
+------------ decode ------------
+throughput: 87.371 tok/s
+total tokens: 128 tok
+total time: 1.465 s
+

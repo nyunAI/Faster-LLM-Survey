@@ -1,0 +1,28 @@
+[2024-01-20 20:23:46] INFO auto_device.py:76: [92mFound[0m device: cuda:0
+[2024-01-20 20:23:46] INFO chat_module.py:370: Using model folder: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/mlcllm/q4f16_1
+[2024-01-20 20:23:46] INFO chat_module.py:371: Using mlc chat config: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/mlcllm/q4f16_1/mlc-chat-config.json
+[2024-01-20 20:23:46] INFO chat_module.py:513: Using library model: exports/Llama-2-7b-hf/engine/mlcllm/q4f16_1/Llama-2-7b-hf-q4f16_1-cuda.so
+[2024-01-20 20:23:47] INFO model_metadata.py:90: [92mTotal memory usage[0m: 6049.14 MB (Parameters: 3615.13 MB. KVCache: 2048.00 MB. Temporary buffer: 386.01 MB)
+[2024-01-20 20:23:47] INFO model_metadata.py:99: To reduce memory usage, tweak `prefill_chunk_size`, `context_window_size` and `sliding_window_size`
+Generated text:
+
+nahm, a.
+1. Of or pertaining to the nose, or the nostrils; snuffish; as, a sneeze, or a snuffling sound.
+2. (Bot.) Having the odor of snuff; snuffish; -- said of certain plants.
+Snuffbox, n.
+1. A small box or case for snuff.
+2. A snuff-taking instrument; -- called also snuff-box.
+Snuff-box, n.
+1. A box for snuff.
+2. A
+
+Statistics:
+----------- prefill -----------
+throughput: 216.539 tok/s
+total tokens: 7 tok
+total time: 0.032 s
+------------ decode ------------
+throughput: 189.074 tok/s
+total tokens: 128 tok
+total time: 0.677 s
+

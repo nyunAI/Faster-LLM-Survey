@@ -1,0 +1,19 @@
+[2024-01-20 20:23:30] INFO auto_device.py:76: [92mFound[0m device: cuda:0
+[2024-01-20 20:23:30] INFO chat_module.py:370: Using model folder: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/mlcllm/q4f16_autoawq_gemm
+[2024-01-20 20:23:30] INFO chat_module.py:371: Using mlc chat config: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/mlcllm/q4f16_autoawq_gemm/mlc-chat-config.json
+[2024-01-20 20:23:30] INFO chat_module.py:513: Using library model: exports/Llama-2-7b-hf/engine/mlcllm/q4f16_autoawq_gemm/Llama-2-7b-hf-q4f16_autoawq-cuda.so
+[2024-01-20 20:23:31] INFO model_metadata.py:90: [92mTotal memory usage[0m: 6143.14 MB (Parameters: 3709.13 MB. KVCache: 2048.00 MB. Temporary buffer: 386.01 MB)
+[2024-01-20 20:23:31] INFO model_metadata.py:99: To reduce memory usage, tweak `prefill_chunk_size`, `context_window_size` and `sliding_window_size`
+Generated text:
+It is the meaning of life that has always driven me. The meaning of life is not the meaning of your life, but the meaning of life. The meaning of life is not the meaning of your life, but the meaning of your life. The meaning of life is not the meaning of your life, but the meaning of your life. The meaning of life is not the meaning of your life, but the meaning of your life. The meaning of life is not the meaning of your life, but the meaning of your life. The meaning of life is not the meaning of your life, but the meaning of your life. The meaning of
+
+Statistics:
+----------- prefill -----------
+throughput: 102.060 tok/s
+total tokens: 7 tok
+total time: 0.069 s
+------------ decode ------------
+throughput: 23.626 tok/s
+total tokens: 128 tok
+total time: 5.418 s
+

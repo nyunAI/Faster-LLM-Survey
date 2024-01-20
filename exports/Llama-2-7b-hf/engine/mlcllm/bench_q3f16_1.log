@@ -1,0 +1,22 @@
+[2024-01-20 20:23:58] INFO auto_device.py:76: [92mFound[0m device: cuda:0
+[2024-01-20 20:23:58] INFO chat_module.py:370: Using model folder: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/mlcllm/q3f16_1
+[2024-01-20 20:23:58] INFO chat_module.py:371: Using mlc chat config: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/mlcllm/q3f16_1/mlc-chat-config.json
+[2024-01-20 20:23:58] INFO chat_module.py:513: Using library model: exports/Llama-2-7b-hf/engine/mlcllm/q3f16_1/Llama-2-7b-hf-q3f16_1-cuda.so
+[2024-01-20 20:23:58] INFO model_metadata.py:90: [92mTotal memory usage[0m: 5341.33 MB (Parameters: 2907.32 MB. KVCache: 2048.00 MB. Temporary buffer: 386.01 MB)
+[2024-01-20 20:23:58] INFO model_metadata.py:99: To reduce memory usage, tweak `prefill_chunk_size`, `context_window_size` and `sliding_window_size`
+Generated text:
+
+ Einzeln 4. 1980, 1981, 1982, 1983, 1984
+# 11 | SPIELEN UND ABZAHLENEN
+Ein großer Teil der Spielindustrie ist nicht so sehr an der Entwicklung neuer Spiele, sondern an der Erweiterung der beliebten Spiele. Es geht in erster Linie darum, die Spiele mit allen möglichen Spielen zu versorgen. Wie ein Kleinkinder unterziehst du dir ein großes
+
+Statistics:
+----------- prefill -----------
+throughput: 209.461 tok/s
+total tokens: 7 tok
+total time: 0.033 s
+------------ decode ------------
+throughput: 185.471 tok/s
+total tokens: 128 tok
+total time: 0.690 s
+

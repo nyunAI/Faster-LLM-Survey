@@ -1,0 +1,154 @@
+[
+    {
+        "cmd_log": "nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/gpu_bench_mem_usage_gptq.csv &",
+        "cmd_start": "text-generation-launcher --model-id /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/gptq --quantize gptq 2>&1 | tee /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/benchmark_gptq_gptq.log",
+        "trials": [
+            3.734050750732422,
+            3.671558380126953,
+            3.699709177017212,
+            3.701732635498047,
+            3.6788365840911865,
+            3.7329118251800537,
+            3.700329303741455,
+            3.7252681255340576,
+            3.7745447158813477,
+            3.735656499862671
+        ],
+        "response": {
+            "generated_text": "arrarrarrarrarrarrarrarrarrarrarrgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgcgc"
+        }
+    },
+    {
+        "cmd_log": "nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/gpu_bench_mem_usage_Llama-2-7b-hf.csv &",
+        "cmd_start": "text-generation-launcher --model-id /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf 2>&1 | tee /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/benchmark_Llama-2-7b-hf.log",
+        "trials": [
+            3.837397336959839,
+            3.8083882331848145,
+            3.785358428955078,
+            3.8046724796295166,
+            3.782144784927368,
+            3.7396247386932373,
+            3.771214008331299,
+            3.7831993103027344,
+            3.80629301071167,
+            3.8164291381835938
+        ],
+        "response": {
+            "generated_text": " This is a question that has been asked by philosophers and theologians for centuries. It is a question that has no easy answer, and one that is often debated.\nThere are many different theories about the meaning of life. Some people believe that the meaning of life is to live a happy and fulfilling life. Others believe that the meaning of life is to find meaning in the world. Still others believe that the meaning of life is to find purpose in life.\nThere is no one answer to the question of what the meaning of life is. It is a question that each person must answer for themselves. However"
+        }
+    },
+    {
+        "cmd_log": "nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/gpu_bench_mem_usage_bitsandbytes-nf4.csv &",
+        "cmd_start": "text-generation-launcher --model-id /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf --quantize bitsandbytes-nf4 2>&1 | tee /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/benchmark_Llama-2-7b-hf_bitsandbytes-nf4.log",
+        "trials": [
+            3.849677085876465,
+            3.7992501258850098,
+            3.835613489151001,
+            3.837451457977295,
+            3.7722277641296387,
+            3.7935194969177246,
+            3.8006997108459473,
+            3.8084070682525635,
+            3.79508638381958,
+            3.8193471431732178
+        ],
+        "response": {
+            "generated_text": " This is a question that has been asked by philosophers and theologians for centuries. It is a question that has no easy answer, and one that is often debated.\nThere are many different theories about the meaning of life. Some people believe that the meaning of life is to live a happy and fulfilling life. Others believe that the meaning of life is to find meaning in the world. Still others believe that the meaning of life is to find purpose in life.\nThere is no one answer to the question of what the meaning of life is. It is a question that each person must answer for themselves. However"
+        }
+    },
+    {
+        "cmd_log": "nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/gpu_bench_mem_usage_bitsandbytes-fp4.csv &",
+        "cmd_start": "text-generation-launcher --model-id /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf --quantize bitsandbytes-fp4 2>&1 | tee /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/benchmark_Llama-2-7b-hf_bitsandbytes-fp4.log",
+        "trials": [
+            3.771937608718872,
+            3.746471405029297,
+            3.758845329284668,
+            3.7731895446777344,
+            3.748760938644409,
+            3.73747181892395,
+            3.7524917125701904,
+            3.745547294616699,
+            3.7232253551483154,
+            3.7393298149108887
+        ],
+        "response": {
+            "generated_text": " This is a question that has been asked by philosophers and theologians for centuries. It is a question that has no easy answer, and one that is often debated.\nThere are many different theories about the meaning of life. Some people believe that the meaning of life is to live a happy and fulfilling life. Others believe that the meaning of life is to find meaning in the world. Still others believe that the meaning of life is to find purpose in life.\nThere is no one answer to the question of what the meaning of life is. It is a question that each person must answer for themselves. However"
+        }
+    },
+    {
+        "cmd_log": "nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/gpu_bench_mem_usage_bitsandbytes.csv &",
+        "cmd_start": "text-generation-launcher --model-id /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf --quantize bitsandbytes 2>&1 | tee /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/benchmark_Llama-2-7b-hf_bitsandbytes.log",
+        "trials": [
+            24.015405654907227,
+            23.953685760498047,
+            23.872623205184937,
+            23.95782971382141,
+            23.90983819961548,
+            23.81147575378418,
+            23.86229658126831,
+            23.773672580718994,
+            23.99585223197937,
+            23.731767177581787
+        ],
+        "response": {
+            "generated_text": " This is a question that has been asked by many people throughout history. It is a question that has no easy answer, and one that has been debated by philosophers and theologians for centuries.\nThe meaning of life is a question that has been asked by many people throughout history. It is a question that has no easy answer, and one that has been debated by philosophers and theologians for centuries.\nThe meaning of life is a question that has been asked by many people throughout history. It is a question that has no easy answer, and one that has been debated by philosophers and theologians"
+        }
+    },
+    {
+        "cmd_log": "nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/gpu_bench_mem_usage_eetq.csv &",
+        "cmd_start": "text-generation-launcher --model-id /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf --quantize eetq 2>&1 | tee /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/benchmark_Llama-2-7b-hf_eetq.log",
+        "trials": [
+            24.29047727584839,
+            24.107252836227417,
+            24.046797275543213,
+            24.13218593597412,
+            24.036288499832153,
+            24.001609802246094,
+            23.902146339416504,
+            23.932092905044556,
+            23.906465768814087,
+            23.91238808631897
+        ],
+        "response": {
+            "generated_text": " This is a question that has been asked by many people throughout history. It is a question that has no easy answer, and one that has been debated by philosophers and theologians for centuries.\nThe meaning of life is a question that has been asked by many people throughout history. It is a question that has no easy answer, and one that has been debated by philosophers and theologians for centuries.\nThe meaning of life is a question that has been asked by many people throughout history. It is a question that has no easy answer, and one that has been debated by philosophers and theologians"
+        }
+    },
+    {
+        "cmd_log": "nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/gpu_bench_mem_usage_q4_gemv.csv &",
+        "cmd_start": "text-generation-launcher --model-id /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/awq/q4_gemv --quantize awq 2>&1 | tee /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/benchmark_awq_q4_gemv.log",
+        "trials": [
+            3.76650071144104,
+            3.7413249015808105,
+            3.7402803897857666,
+            3.740513801574707,
+            3.7490100860595703,
+            3.7550995349884033,
+            3.795043706893921,
+            3.7488012313842773,
+            3.7528634071350098,
+            3.7446320056915283
+        ],
+        "response": {
+            "generated_text": " What is the meaning of death? What is the meaning of love? What is the meaning of hate? What is the meaning of life? What is the meaning of death? What is the meaning of love? What is the meaning of hate? What is the meaning of life? What is the meaning of death? What is the meaning of love? What is the meaning of hate? What is the meaning of life? What is the meaning of death? What is the meaning of love? What is the meaning of hate? What is the meaning of life? What is the meaning of death? What is the meaning of love? What is"
+        }
+    },
+    {
+        "cmd_log": "nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/gpu_bench_mem_usage_q4_gemm.csv &",
+        "cmd_start": "text-generation-launcher --model-id /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/awq/q4_gemm --quantize awq 2>&1 | tee /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/engine/tgi/benchmark_awq_q4_gemm.log",
+        "trials": [
+            4.249738693237305,
+            4.180865287780762,
+            4.174380302429199,
+            4.170586824417114,
+            4.184711694717407,
+            4.200952768325806,
+            4.176779747009277,
+            4.185723543167114,
+            4.1558997631073,
+            4.196531772613525
+        ],
+        "response": {
+            "generated_text": " What is the meaning of death? What is the meaning of love? What is the meaning of hate? What is the meaning of life? What is the meaning of death? What is the meaning of love? What is the meaning of hate? What is the meaning of life? What is the meaning of death? What is the meaning of love? What is the meaning of hate? What is the meaning of life? What is the meaning of death? What is the meaning of love? What is the meaning of hate? What is the meaning of life? What is the meaning of death? What is the meaning of love? What is"
+        }
+    }
+]

@@ -32,3 +32,6 @@
 	path = engine/tensorrtllm/tensorrtllm
 	url = https://github.com/NVIDIA/TensorRT-LLM.git
 	branch = release/0.5.0
+[submodule "engine/tgi/tgi"]
+	path = engine/tgi/tgi
+	url = https://github.com/huggingface/text-generation-inference.git

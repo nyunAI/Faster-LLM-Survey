@@ -1,0 +1,16 @@
+You passed `quantization_config` to `from_pretrained` but the model you're loading already has a `quantization_config` attribute and has already quantized weights. However, loading attributes (e.g. ['fuse_max_seq_len', 'modules_to_fuse', 'do_fuse']) will be overwritten with the one you passed to `from_pretrained`. The rest will be ignored.
+BASE: /home/shwu/LLM-Efficiency-Survey
+MODEL: /home/shwu/LLM-Efficiency-Survey/model
+MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
+METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
+Quant: awq_4_gemm
+Memory footprint: 3.6847076416015625 GiB
+Output: What is the meaning of life? What is the meaning of the universe? What is the meaning of death? What is the meaning of happiness? What is the meaning of sorrow? What is the meaning of love? What is the meaning of life?
+The answer is that there is no meaning. The meaning is in the questions.
+What is the meaning of life? What is the meaning of the universe? What is the meaning of death? What is the meaning of happiness? What is the meaning of sorrow? What is the meaning of love? What is the meaning of life?
+The meaning is in the questions. The meaning is in the answers. The meaning
+----------------------------------- Stats -----------------------------------
+Generated 128 tokens in 5.370797157287598 seconds (23.832588766886808 tokens/s)
+--------------------------------------------------------------------------------
+
+

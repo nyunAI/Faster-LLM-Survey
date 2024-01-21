@@ -1,0 +1,15 @@
+You passed `quantization_config` to `from_pretrained` but the model you're loading already has a `quantization_config` attribute and has already quantized weights. However, loading attributes (e.g. ['fuse_max_seq_len', 'modules_to_fuse', 'do_fuse']) will be overwritten with the one you passed to `from_pretrained`. The rest will be ignored.
+BASE: /home/shwu/LLM-Efficiency-Survey
+MODEL: /home/shwu/LLM-Efficiency-Survey/model
+MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
+METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
+Quant: awq_4_gemv
+Memory footprint: 3.6853179931640625 GiB
+Output: What is the meaning of life? This is a question that has puzzled philosophers for centuries, and one that still baffles many people today.
+There are a number of different theories about the meaning of life, but one of the most popular is that it is to find happiness. This can be interpreted in a number of ways, but generally speaking, it means to live a life that is fulfilling and meaningful to you.
+There are a number of different ways to find happiness, and it is important to find what works for you. Some people find happiness in their work, while others find it in their relationships. Some people find happiness in their
+----------------------------------- Stats -----------------------------------
+Generated 128 tokens in 5.202446699142456 seconds (24.60380805460224 tokens/s)
+--------------------------------------------------------------------------------
+
+

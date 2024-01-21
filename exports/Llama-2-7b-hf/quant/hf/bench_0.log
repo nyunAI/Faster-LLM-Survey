@@ -1,0 +1,15 @@
+BASE: /home/shwu/LLM-Efficiency-Survey
+MODEL: /home/shwu/LLM-Efficiency-Survey/model
+MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
+METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
+Quant: bits_and_bytes_4
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.12s/it]
+Memory footprint: 3.5669097900390625 GiB
+Output: What is the meaning of life? Why are we here? What is the purpose of life? What is the meaning of life? What is the purpose of life?
+ nobody asks these questions more than the average teenager. It's not surprising, then, that the most common answer to the question, "What is the meaning of life?" is "What do you think?"
+There are many reasons why we ask the question, "What is the meaning of life?" For one, we want to know if we are alone in our suffering. We want to know if we are alone in our joy. We want to know if we are alone in our struggle
+----------------------------------- Stats -----------------------------------
+Generated 128 tokens in 7.525451898574829 seconds (17.008945339779615 tokens/s)
+--------------------------------------------------------------------------------
+
+

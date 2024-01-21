@@ -1,0 +1,16 @@
+BASE: /home/shwu/LLM-Efficiency-Survey
+MODEL: /home/shwu/LLM-Efficiency-Survey/model
+MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
+METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
+Quant: bits_and_bytes_8
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.08s/it]
+Memory footprint: 6.5825347900390625 GiB
+Output: What is the meaning of life? This question has puzzled humans for millennia. Why do we exist? What is our purpose?
+Is there a reason for our existence?
+The question of the meaning of life is a philosophical question that has been asked for centuries. The answer to this question is different for everyone. Some people believe that there is no meaning to life, while others believe that there is a higher purpose.
+There are many different theories about the meaning of life. Some people believe that the meaning of life is to find happiness, while others believe that the meaning of life is to find purpose. There are also those who believe that the meaning
+----------------------------------- Stats -----------------------------------
+Generated 128 tokens in 25.527113676071167 seconds (5.014276256386392 tokens/s)
+--------------------------------------------------------------------------------
+
+

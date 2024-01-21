@@ -38,6 +38,25 @@ python $METHOD_PATH/quant_with_alpaca.py \
 --bits 8
 killall nvidia-smi
 
+# quantize q2-128g
+MODEL_Q2_128G=$METHOD_EXPORTS/q2_128g
+start_mem_tracker "quantize_q2_128g"
+python $METHOD_PATH/quant_with_alpaca.py \
+--pretrained_model_dir $MODEL_PATH \
+--quantized_model_dir $MODEL_Q2_128G \
+--dataset $DATASET_PATH \
+--bits 2
+killall nvidia-smi
+
+# quantize q3-128g
+MODEL_Q3_128G=$METHOD_EXPORTS/q3_128g
+start_mem_tracker "quantize_q3_128g"
+python $METHOD_PATH/quant_with_alpaca.py \
+--pretrained_model_dir $MODEL_PATH \
+--quantized_model_dir $MODEL_Q3_128G \
+--dataset $DATASET_PATH \
+--bits 3
+killall nvidia-smi
 
 # # quantize triton q4-128g
 # MODEL_TRT_Q4_128G=$METHOD_EXPORTS/trt_q4_128g

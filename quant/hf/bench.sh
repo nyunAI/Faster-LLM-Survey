@@ -16,8 +16,8 @@ METHOD_EXPORTS=$EXPORTS/$METHOD
 
 cd $METHOD_PATH
 
-# for i in {0..7}; do
-#     python bench.py $i 2>&1 | tee $BASE/$METHOD_EXPORTS/bench_$i.log
-# done
+for i in {0..10}; do
+    python bench.py $i 2>&1 | tee $BASE/$METHOD_EXPORTS/bench_$i.log
+done
 
 python bench.py "baseline" 2>&1 | tee $BASE/$METHOD_EXPORTS/bench_baseline.log

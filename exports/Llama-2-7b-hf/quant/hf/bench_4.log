@@ -1,13 +1,19 @@
-You passed `quantization_config` to `from_pretrained` but the model you're loading already has a `quantization_config` attribute and has already quantized weights. However, loading attributes (e.g. ['use_cuda_fp16', 'use_exllama', 'max_input_length', 'exllama_config', 'disable_exllama']) will be overwritten with the one you passed to `from_pretrained`. The rest will be ignored.
+You passed `quantization_config` to `from_pretrained` but the model you're loading already has a `quantization_config` attribute and has already quantized weights. However, loading attributes (e.g. ['fuse_max_seq_len', 'modules_to_fuse', 'do_fuse']) will be overwritten with the one you passed to `from_pretrained`. The rest will be ignored.
 BASE: /home/shwu/LLM-Efficiency-Survey
 MODEL: /home/shwu/LLM-Efficiency-Survey/model
 MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
 METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
-Quant: gptq_2
-Memory footprint: 2.1718902587890625 GiB
-Output: What is the meaning of life? 111,12-Kim2stX 4 (ct. 4 10) and 12 T, 2 St, 3, 4 I 1 The GU 1 and 2, 30. 2 83 Pro, I outlat,4/fatiis 5, Kt. 4, and at the department of their down(115 average) 1, p& 48 (18) D. 3. 1. 10, 20-4 2 4 7
------------------------------------ Stats -----------------------------------
-Generated 128 tokens in 6.927386522293091 seconds (18.47738675878442 tokens/s)
---------------------------------------------------------------------------------
+
+
+=================================== Quant: awq_4_gemv ===================================
+Output: What is the meaning of life? What is the meaning of death?
+The meaning of life is to be happy. The meaning of death is to be unhappy no more.
+What is the meaning of life? What is the meaning of death? The meaning of life is to be happy. The meaning of death is to be unhappy no more.
+The meaning of life is to be happy. The meaning of death is to be unhappy no more.
+The meaning of life is to be happy. The meaning of death is to be unhappy no more.
+The meaning of life is to be happy. The meaning of death is to be unhappy
+======================================== Stats ========================================
+Generated 128 tokens in 4.024226188659668 seconds (31.807357240680457 tokens/s)
+================================================================================
 
 

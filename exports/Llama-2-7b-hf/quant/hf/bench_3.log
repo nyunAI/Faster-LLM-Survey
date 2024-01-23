@@ -3,13 +3,12 @@ BASE: /home/shwu/LLM-Efficiency-Survey
 MODEL: /home/shwu/LLM-Efficiency-Survey/model
 MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
 METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
-Quant: awq_4_gemv
-Memory footprint: 3.6853179931640625 GiB
-Output: What is the meaning of life? This is a question that has puzzled philosophers for centuries, and one that still baffles many people today.
-There are a number of different theories about the meaning of life, but one of the most popular is that it is to find happiness. This can be interpreted in a number of ways, but generally speaking, it means to live a life that is fulfilling and meaningful to you.
-There are a number of different ways to find happiness, and it is important to find what works for you. Some people find happiness in their work, while others find it in their relationships. Some people find happiness in their
------------------------------------ Stats -----------------------------------
-Generated 128 tokens in 5.202446699142456 seconds (24.60380805460224 tokens/s)
---------------------------------------------------------------------------------
+
+
+=================================== Quant: awq_4_gemm ===================================
+Output: What is the meaning of life? What is the meaning of death? What is the meaning of suffering? Why do we exist? Why do we suffer? Why do we die? Why is there evil in the world? Why is there pain and suffering in the world? Why is there suffering in the world? Why do we suffer? Why is there evil in the world? Why do we suffer? Why is there suffering in the world? Why is there evil in the world? Why is there suffering in the world? Why is there evil in the world? Why is there suffering in the world? Why is there evil in the world? Why do we suffer? Why do
+======================================== Stats ========================================
+Generated 128 tokens in 4.49007248878479 seconds (28.507334863683326 tokens/s)
+================================================================================
 
 

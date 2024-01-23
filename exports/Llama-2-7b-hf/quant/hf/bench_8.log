@@ -1,0 +1,18 @@
+You passed `quantization_config` to `from_pretrained` but the model you're loading already has a `quantization_config` attribute and has already quantized weights. However, loading attributes (e.g. ['use_cuda_fp16', 'use_exllama', 'max_input_length', 'exllama_config', 'disable_exllama']) will be overwritten with the one you passed to `from_pretrained`. The rest will be ignored.
+BASE: /home/shwu/LLM-Efficiency-Survey
+MODEL: /home/shwu/LLM-Efficiency-Survey/model
+MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
+METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.64s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.20s/it]
+
+
+=================================== Quant: gptq_8 ===================================
+Output: What is the meaning of life? What is the purpose of life? Why are we here? Why do we exist?
+What is the meaning of life? Why are we here? What is the purpose of life? These are questions that have puzzled humanity for centuries. The answer is that there is no one answer to these questions.
+The meaning of life is different for everyone. What is the purpose of life? There is no one answer to this question either.
+The purpose of life is different for everyone. Some people believe that the purpose of life is to live a good life and to make the world a better place. Others believe that the purpose
+======================================== Stats ========================================
+Generated 128 tokens in 5.993677377700806 seconds (21.35583748238068 tokens/s)
+================================================================================
+
+

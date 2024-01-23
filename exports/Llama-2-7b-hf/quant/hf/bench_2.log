@@ -1,16 +1,16 @@
-You passed `quantization_config` to `from_pretrained` but the model you're loading already has a `quantization_config` attribute and has already quantized weights. However, loading attributes (e.g. ['fuse_max_seq_len', 'modules_to_fuse', 'do_fuse']) will be overwritten with the one you passed to `from_pretrained`. The rest will be ignored.
 BASE: /home/shwu/LLM-Efficiency-Survey
 MODEL: /home/shwu/LLM-Efficiency-Survey/model
 MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
 METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
-Quant: awq_4_gemm
-Memory footprint: 3.6847076416015625 GiB
-Output: What is the meaning of life? What is the meaning of the universe? What is the meaning of death? What is the meaning of happiness? What is the meaning of sorrow? What is the meaning of love? What is the meaning of life?
-The answer is that there is no meaning. The meaning is in the questions.
-What is the meaning of life? What is the meaning of the universe? What is the meaning of death? What is the meaning of happiness? What is the meaning of sorrow? What is the meaning of love? What is the meaning of life?
-The meaning is in the questions. The meaning is in the answers. The meaning
------------------------------------ Stats -----------------------------------
-Generated 128 tokens in 5.370797157287598 seconds (23.832588766886808 tokens/s)
---------------------------------------------------------------------------------
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  3.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.89s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.05s/it]
+
+
+=================================== Quant: bits_and_bytes_8 ===================================
+Output: What is the meaning of life? This is a question that has been asked by many people throughout history, and it is one that still remains unanswered.
+The meaning of life can be different for each person. For some, it may be to find happiness and contentment in their lives. For others, it may be to make a difference in the world and help others. And for still others, it may be to find a sense of purpose and fulfillment in their lives.
+There is no one answer to the question of what the meaning of life is. It is something that each person must find for themselves. But by asking this question, we can
+======================================== Stats ========================================
+Generated 128 tokens in 24.415091514587402 seconds (5.242659030113535 tokens/s)
+================================================================================
 
 

@@ -1,8 +1,14 @@
-# reference - https://github.com/huggingface/optimum/blob/main/tests/benchmark/benchmark_gptq.py#L266
 from pathlib import Path
 import time
 import subprocess
 import os
+import torch
+from tqdm import tqdm
+from datasets import load_dataset
+from auto_gptq.utils import Perplexity
+import numpy as np
+
+device = torch.device("cuda:0")
 
 THIS = Path(".")
 BASE = THIS / ".." / ".."
@@ -29,8 +35,10 @@ import torch
 from transformers import BitsAndBytesConfig, AwqConfig, GPTQConfig, AutoTokenizer, AutoModelForCausalLM
 from transformers.utils.quantization_config import AWQLinearVersion, ExllamaVersion, QuantizationMethod
 
-tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 
+tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, use_fast=False)
+if not hasattr(tokenizer, "pad_token") or tokenizer.pad_token is None:
+    tokenizer.pad_token = tokenizer.eos_token
 quant_configs = [
 
     # bitsandbytes
@@ -55,13 +63,16 @@ quant_configs = [
     GPTQConfig(bits=4, tokenizer=tokenizer, dataset="wikitext2", group_size=128, use_exllama=True, exllama_config={ "version": ExllamaVersion.TWO}), # 4bit
 ]
 
+
+
 AWQ_EXPORTS=EXPORTS / "quant/awq"
 GPTQ_EXPORTS=EXPORTS / "quant/gptq"
 
 # tokenizer := tokenizer
 def model_loader(quant_config):
-    device_map = "cuda:0"
+    device_map = "auto"
     model_path = MODEL_PATH
+
 
     if quant_config.quant_method == QuantizationMethod.AWQ:
         model_path = AWQ_EXPORTS / quant_config.version.name.lower()
@@ -86,7 +97,7 @@ if __name__ == "__main__":
     # take input args bits for quantization
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("method", type=str, help="quant method to quantize to (0, 1, 2, 3, 4, 5, 6, 7, 'baseline')")
+    parser.add_argument("method", type=str, help=f"quant method to quantize to (0, to {len(quant_configs) - 1}, 'baseline')")
     args = parser.parse_args()
 
 
@@ -94,7 +105,7 @@ if __name__ == "__main__":
     if args.method == "baseline":
         model = AutoModelForCausalLM.from_pretrained(
             MODEL_PATH,
-            device_map = "cuda:0",
+            device_map = "auto",
             torch_dtype=torch.float16,
         )
         q = "baseline"
@@ -107,6 +118,7 @@ if __name__ == "__main__":
 
         elif quant_config.quant_method == QuantizationMethod.GPTQ:
             if quant_config.use_exllama:
+                print("Using Exllama", quant_config.exllama_config['version'].name.lower(), quant_config.exllama_config['version'])
                 q = f"{quant_config.quant_method.name.lower()}_{quant_config.bits}_exllama_version_{quant_config.exllama_config['version'].name.lower()}"
             else:
                 q = f"{quant_config.quant_method.name.lower()}_{quant_config.bits}"
@@ -116,33 +128,16 @@ if __name__ == "__main__":
 
         model = model_loader(quant_config)
 
-    print(f"\n\n{'=' * 35} Quant: {q} {'=' * 35}")
-    prompt = "What is the meaning of life?"
-    time.sleep(5)
-    model.eval()
     torch.cuda.synchronize()
-    # warmup
-    inputs = tokenizer("Warming up", return_tensors="pt").input_ids.to(model.device)
-    outputs = model.generate(inputs, max_new_tokens=128)
-    text = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
-
-    # benchmark
-    cmd = f"nvidia-smi --format=csv,nounits --query-gpu=utilization.gpu,utilization.memory,memory.used,memory.free,memory.total -lms 100 > {METHOD_EXPORTS}/gpu_bench_mem_usage_{q if q else 'baseline'}.csv"
-    process = subprocess.Popen(cmd, shell=True)
-    tick = time.time()
-    inputs = tokenizer(prompt, return_tensors="pt").input_ids.to(model.device)
-    outputs = model.generate(inputs, max_new_tokens=128)
-    text = tokenizer.batch_decode(outputs, skip_special_tokens=True)[0]
-    tock = time.time()
-    process.kill()
-    time.sleep(5)
-    os.system("killall nvidia-smi")
-
-    print("Output:", text)
-    op_tokens = 128 
-    # op_tokens = len(tokenizer.tokenize(text))
-    tokens_per_sec = op_tokens / (tock - tick)
-    print(f"{'=' * 40} Stats {'=' * 40}\nGenerated {op_tokens} tokens in {tock-tick} seconds ({tokens_per_sec} tokens/s)\n{'=' * 80}\n\n")
-
+    model = model.eval()
     
-        
+    print("=" * 80)
+    print(f"Perplexity for {q.replace('_', ' ')}")
+    print("Quant:", q)
+    print("Model Device:", model.device)
+
+    ppl = Perplexity(model, tokenizer)
+    ppl_value = np.mean(ppl.calculate_perplexity())
+
+    print("PPL Score:", ppl_value)
+    print("=" * 80)

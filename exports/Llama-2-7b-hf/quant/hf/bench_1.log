@@ -2,15 +2,15 @@ BASE: /home/shwu/LLM-Efficiency-Survey
 MODEL: /home/shwu/LLM-Efficiency-Survey/model
 MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
 METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
-Quant: bits_and_bytes_8
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.08s/it]
-Memory footprint: 6.5825347900390625 GiB
-Output: What is the meaning of life? This question has puzzled humans for millennia. Why do we exist? What is our purpose?
-Is there a reason for our existence?
-The question of the meaning of life is a philosophical question that has been asked for centuries. The answer to this question is different for everyone. Some people believe that there is no meaning to life, while others believe that there is a higher purpose.
-There are many different theories about the meaning of life. Some people believe that the meaning of life is to find happiness, while others believe that the meaning of life is to find purpose. There are also those who believe that the meaning
------------------------------------ Stats -----------------------------------
-Generated 128 tokens in 25.527113676071167 seconds (5.014276256386392 tokens/s)
---------------------------------------------------------------------------------
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.96s/it]
+
+
+=================================== Quant: bits_and_bytes_4_nf4 ===================================
+Output: What is the meaning of life? The question has been asked for thousands of years, and it is one that has yet to be answered. nobody really knows the meaning of life.
+The question of what is the meaning of life is one of the most important questions that a person can ask. The answer to this question is not easy to find, and it is not something that can be answered with a simple yes or no.
+There are many different answers to this question, and each person will have their own opinion on what the meaning of life is. Some people believe that the meaning of life is to live a happy and fulfilling life, while others believe that
+======================================== Stats ========================================
+Generated 128 tokens in 6.4958860874176025 seconds (19.704779036678826 tokens/s)
+================================================================================
 
 

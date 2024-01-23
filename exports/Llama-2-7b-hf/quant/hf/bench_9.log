@@ -5,10 +5,12 @@ MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
 METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
 
 
-=================================== Quant: gptq_2 ===================================
-Output: What is the meaning of life? 3 (give, P)s to (sfos on) the (f) to the Mr to Comic. 21, 90 minar, $15. 2 E 2 S 3 E 3 0 02 07 5 42 2 3 Life In 63 6 3 6 V 243 and the N a different don (B) 6 Exp 7 Rem and 2 Or the N 5c2z 9 E-s U5 101 45 T 10
+=================================== Quant: gptq_4_exllama_version_one ===================================
+Output: What is the meaning of life? I've asked myself this question on many occasions. everybody wants to know the answer to this question. There are many theories and beliefs. Some say it is to enjoy life, some say it is to find a purpose, some say it is to live a good life. But what does the bible say?
+The Bible is the most popular book in the world. It has been translated into over 1,500 languages and is read by more than 2.2 billion people. It is also the best-selling book of all time.
+The Bible is a collection of 66 books written by
 ======================================== Stats ========================================
-Generated 128 tokens in 6.122849702835083 seconds (20.905298384301634 tokens/s)
+Generated 128 tokens in 4.205398321151733 seconds (30.43706926789865 tokens/s)
 ================================================================================
 
 

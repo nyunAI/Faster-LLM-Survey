@@ -3,12 +3,40 @@ BASE: /home/shwu/LLM-Efficiency-Survey
 MODEL: /home/shwu/LLM-Efficiency-Survey/model
 MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
 METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
-Quant: gptq_4
-Memory footprint: 3.6914825439453125 GiB
-Output: What is the meaning of life? I have always found this question to be a very difficult one to answer. everybody has a different meaning of life. some people believe that the meaning of life is to live a life full of happiness and joy. others believe that the meaning of life is to live a life full of sorrow and pain.
-I personally believe that the meaning of life is to live a life full of love. I believe that the meaning of life is to live a life full of love because I believe that the meaning of life is to live a life full of love. I believe that the meaning of life is to live a life full of love because I believe
------------------------------------ Stats -----------------------------------
-Generated 128 tokens in 7.052340269088745 seconds (18.15000341957965 tokens/s)
---------------------------------------------------------------------------------
+
+
+=================================== Quant: gptq_3 ===================================
+Output: What is the meaning of life?
+ 
+### 1. 
+
+* [1.1] 
+
+* [1.2] 
+
+* [1.3] 
+
+* [1.4] 
+
+* [1.5] 
+
+* [1.6] 
+
+* [1.7] 
+
+* [1.8] 
+
+* [1.9] 
+
+* [1.10] 
+
+* [1.11] 
+
+* [1.12] 
+
+* [1.13
+======================================== Stats ========================================
+Generated 128 tokens in 6.027063846588135 seconds (21.23753841971653 tokens/s)
+================================================================================
 
 

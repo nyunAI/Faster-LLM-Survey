@@ -3,13 +3,18 @@ BASE: /home/shwu/LLM-Efficiency-Survey
 MODEL: /home/shwu/LLM-Efficiency-Survey/model
 MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
 METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
-Quant: gptq_8
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.82s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.23s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.32s/it]
-Memory footprint: 6.7306671142578125 GiB
-Output: What is the meaning of life? What is the meaning of existence? What is the meaning of human life? These questions are very important to us, but we don’t know how to answer them.
-The meaning of life is something that we don’t know. It’s something that we can’t explain. It’s something that we can’t understand. It’s something that we can’t see. It’s something that we can’t hear. It’s something that we can’t feel. It’s something that we can’t taste. It’s something that we can’t smell. It’
------------------------------------ Stats -----------------------------------
-Generated 128 tokens in 7.2449281215667725 seconds (17.667532079299498 tokens/s)
---------------------------------------------------------------------------------
+
+
+=================================== Quant: gptq_4 ===================================
+Output: What is the meaning of life? What is the meaning of the universe? What is the meaning of death?
+ everyone wants to know the answers to these questions.
+I’m no different. But unlike most people, I’ve spent a lot of time thinking about these questions. I’ve read books, watched documentaries, and talked with people who have spent a lot of time thinking about these questions.
+And I’ve come to the conclusion that there is no single answer to these questions.
+The meaning of life is whatever you want it to be.
+The meaning of the universe is whatever you want it to be.
+And the meaning of
+======================================== Stats ========================================
+Generated 128 tokens in 5.918351411819458 seconds (21.62764443901945 tokens/s)
+================================================================================
 
 

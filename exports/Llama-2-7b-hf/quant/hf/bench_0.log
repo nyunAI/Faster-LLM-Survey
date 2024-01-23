@@ -2,14 +2,15 @@ BASE: /home/shwu/LLM-Efficiency-Survey
 MODEL: /home/shwu/LLM-Efficiency-Survey/model
 MODEL_PATH: /home/shwu/LLM-Efficiency-Survey/model/Llama-2-7b-hf
 METHOD_EXPORTS: /home/shwu/LLM-Efficiency-Survey/exports/Llama-2-7b-hf/quant/hf
-Quant: bits_and_bytes_4
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.94s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.12s/it]
-Memory footprint: 3.5669097900390625 GiB
-Output: What is the meaning of life? Why are we here? What is the purpose of life? What is the meaning of life? What is the purpose of life?
- nobody asks these questions more than the average teenager. It's not surprising, then, that the most common answer to the question, "What is the meaning of life?" is "What do you think?"
-There are many reasons why we ask the question, "What is the meaning of life?" For one, we want to know if we are alone in our suffering. We want to know if we are alone in our joy. We want to know if we are alone in our struggle
------------------------------------ Stats -----------------------------------
-Generated 128 tokens in 7.525451898574829 seconds (17.008945339779615 tokens/s)
---------------------------------------------------------------------------------
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.87s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.80s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.97s/it]
+
+
+=================================== Quant: bits_and_bytes_4_fp4 ===================================
+Output: What is the meaning of life? This question is the most important question that any human being can ask. hopefully, it is a question that every person can answer.
+In the Bible, we read the story of Job. Job was a wealthy man who was blessed with a large family and many possessions. However, one day, he lost everything. His children were killed, his possessions were stolen, and his health was destroyed. Despite all of this, Job never lost his faith in God.
+Job’s story teaches us that the meaning of life is to have faith in God. We are all faced with challenges in our lives.
+======================================== Stats ========================================
+Generated 128 tokens in 6.454317808151245 seconds (19.831685362370454 tokens/s)
+================================================================================
 
 

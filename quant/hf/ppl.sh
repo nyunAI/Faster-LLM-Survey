@@ -1,3 +1,4 @@
+BASE=$(pwd)
 # Description: Generate the quantization results for all methods
 METHOD=quant/hf
 METHOD_PATH=$METHOD
@@ -8,14 +9,15 @@ DATASET_NAME=alpaca-cleaned
 MODEL_PATH=model/$MODEL_NAME
 DATASET_PATH=datasets/$DATASET_NAME/alpaca_data_cleaned.json
 
-EXPORTS=exports_2/$MODEL_NAME
+EXPORTS=exports/$MODEL_NAME
 METHOD_EXPORTS=$EXPORTS/$METHOD
 
-mkdir -p $METHOD_EXPORTS
 
 
 cd $METHOD_PATH
 
-for i in {4..7}; do
-    python generate.py $i
+for i in {0..10}; do
+    python ppl.py $i 2>&1 | tee $BASE/$METHOD_EXPORTS/bench_ppl_$i.log
 done
+
+python ppl.py "baseline" 2>&1 | tee $BASE/$METHOD_EXPORTS/bench_ppl_baseline.log

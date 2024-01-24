@@ -1,0 +1,5 @@
+utilization.gpu [%], utilization.memory [%], memory.used [MiB], memory.free [MiB], memory.total [MiB]
+0, 0, 4, 40334, 40960
+8, 0, 24, 40315, 40960
+8, 0, 31, 40307, 40960
+3, 0, 438, 39900, 40960

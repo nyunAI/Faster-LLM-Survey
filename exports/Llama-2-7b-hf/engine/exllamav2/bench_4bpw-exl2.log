@@ -2,36 +2,45 @@
  -- Options: ['gpu_split: 40']
  -- Loading model...
  -- Loading tokenizer...
+ -- Running perplexity test
+ -- Dataset: datasets/wikitext_train.parquet
+ -- Tokenizing eval data, 128 rows x 2048 tokens...
+ -- First 50 tokens of dataset:
+    ' = Valkyria Chronicles III = \n  Senjō no Valkyria 3 : Unrecorded Chronicles ( Japanese : 戦場のヴァルキュリア3 , lit . Valky'
+ -- Last 50 tokens of dataset:
+    '. It is found in North America and the Canary Islands . A. asiaticus and A. odoratus are two similar species known from throughout Asia and Southeast Asia , respectively . A. odoratus is distinguished from A.'
+ -- Inference.............
+ -- Evaluation perplexity: 6.1299
  -- Measuring token speed...
- ** Position     1 + 127 tokens:  123.4357 t/s
- ** Position   128 + 128 tokens:  128.5555 t/s
- ** Position   256 + 128 tokens:  129.2027 t/s
- ** Position   384 + 128 tokens:  127.8497 t/s
- ** Position   512 + 128 tokens:  126.5953 t/s
- ** Position   640 + 128 tokens:  124.8127 t/s
- ** Position   768 + 128 tokens:  123.7410 t/s
- ** Position   896 + 128 tokens:  121.0576 t/s
- ** Position  1024 + 128 tokens:  120.5871 t/s
- ** Position  1152 + 128 tokens:  119.6998 t/s
- ** Position  1280 + 128 tokens:  118.9561 t/s
- ** Position  1408 + 128 tokens:  117.0427 t/s
- ** Position  1536 + 128 tokens:  116.5207 t/s
- ** Position  1664 + 128 tokens:  114.7219 t/s
- ** Position  1792 + 128 tokens:  114.0582 t/s
- ** Position  1920 + 128 tokens:  113.1060 t/s
- ** Position  2048 + 128 tokens:  113.3261 t/s
- ** Position  2176 + 128 tokens:  112.0669 t/s
- ** Position  2304 + 128 tokens:  112.4152 t/s
- ** Position  2432 + 128 tokens:  111.0962 t/s
- ** Position  2560 + 128 tokens:  110.0805 t/s
- ** Position  2688 + 128 tokens:  109.4805 t/s
- ** Position  2816 + 128 tokens:  108.5089 t/s
- ** Position  2944 + 128 tokens:  107.4986 t/s
- ** Position  3072 + 128 tokens:  107.0693 t/s
- ** Position  3200 + 128 tokens:  105.8318 t/s
- ** Position  3328 + 128 tokens:  105.3951 t/s
- ** Position  3456 + 128 tokens:  104.1914 t/s
- ** Position  3584 + 128 tokens:  103.7729 t/s
- ** Position  3712 + 128 tokens:  102.7363 t/s
- ** Position  3840 + 128 tokens:  102.3414 t/s
- ** Position  3968 + 128 tokens:  101.0589 t/s
+ ** Position     1 + 127 tokens:  130.5391 t/s
+ ** Position   128 + 128 tokens:  131.6847 t/s
+ ** Position   256 + 128 tokens:  128.6936 t/s
+ ** Position   384 + 128 tokens:  127.2765 t/s
+ ** Position   512 + 128 tokens:  126.3690 t/s
+ ** Position   640 + 128 tokens:  124.5400 t/s
+ ** Position   768 + 128 tokens:  123.3648 t/s
+ ** Position   896 + 128 tokens:  121.1489 t/s
+ ** Position  1024 + 128 tokens:  120.3303 t/s
+ ** Position  1152 + 128 tokens:  120.1171 t/s
+ ** Position  1280 + 128 tokens:  118.2585 t/s
+ ** Position  1408 + 128 tokens:  117.3149 t/s
+ ** Position  1536 + 128 tokens:  116.3834 t/s
+ ** Position  1664 + 128 tokens:  114.9332 t/s
+ ** Position  1792 + 128 tokens:  113.5213 t/s
+ ** Position  1920 + 128 tokens:  112.6380 t/s
+ ** Position  2048 + 128 tokens:  113.2095 t/s
+ ** Position  2176 + 128 tokens:  111.5583 t/s
+ ** Position  2304 + 128 tokens:  112.2842 t/s
+ ** Position  2432 + 128 tokens:  110.9715 t/s
+ ** Position  2560 + 128 tokens:  110.7230 t/s
+ ** Position  2688 + 128 tokens:  109.3011 t/s
+ ** Position  2816 + 128 tokens:  108.7143 t/s
+ ** Position  2944 + 128 tokens:  107.2822 t/s
+ ** Position  3072 + 128 tokens:  107.0780 t/s
+ ** Position  3200 + 128 tokens:  105.8237 t/s
+ ** Position  3328 + 128 tokens:  105.0926 t/s
+ ** Position  3456 + 128 tokens:  104.1152 t/s
+ ** Position  3584 + 128 tokens:  104.1634 t/s
+ ** Position  3712 + 128 tokens:  102.5221 t/s
+ ** Position  3840 + 128 tokens:  101.4384 t/s
+ ** Position  3968 + 128 tokens:  100.6832 t/s

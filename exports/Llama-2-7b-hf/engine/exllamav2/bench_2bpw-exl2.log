@@ -1,0 +1,46 @@
+ -- Model: exports/Llama-2-7b-hf/engine/exllamav2/2bpw-exl2
+ -- Options: ['gpu_split: 40']
+ -- Loading model...
+ -- Loading tokenizer...
+ -- Running perplexity test
+ -- Dataset: datasets/wikitext_train.parquet
+ -- Tokenizing eval data, 128 rows x 2048 tokens...
+ -- First 50 tokens of dataset:
+    ' = Valkyria Chronicles III = \n  Senjō no Valkyria 3 : Unrecorded Chronicles ( Japanese : 戦場のヴァルキュリア3 , lit . Valky'
+ -- Last 50 tokens of dataset:
+    '. It is found in North America and the Canary Islands . A. asiaticus and A. odoratus are two similar species known from throughout Asia and Southeast Asia , respectively . A. odoratus is distinguished from A.'
+ -- Inference.............
+ -- Evaluation perplexity: 20.2119
+ -- Measuring token speed...
+ ** Position     1 + 127 tokens:  151.6617 t/s
+ ** Position   128 + 128 tokens:  153.7590 t/s
+ ** Position   256 + 128 tokens:  150.0183 t/s
+ ** Position   384 + 128 tokens:  149.0704 t/s
+ ** Position   512 + 128 tokens:  146.8689 t/s
+ ** Position   640 + 128 tokens:  145.0349 t/s
+ ** Position   768 + 128 tokens:  142.5847 t/s
+ ** Position   896 + 128 tokens:  140.5410 t/s
+ ** Position  1024 + 128 tokens:  139.4696 t/s
+ ** Position  1152 + 128 tokens:  138.6846 t/s
+ ** Position  1280 + 128 tokens:  137.1763 t/s
+ ** Position  1408 + 128 tokens:  134.8658 t/s
+ ** Position  1536 + 128 tokens:  133.9199 t/s
+ ** Position  1664 + 128 tokens:  132.5135 t/s
+ ** Position  1792 + 128 tokens:  130.6820 t/s
+ ** Position  1920 + 128 tokens:  128.6495 t/s
+ ** Position  2048 + 128 tokens:  129.1156 t/s
+ ** Position  2176 + 128 tokens:  127.9760 t/s
+ ** Position  2304 + 128 tokens:  128.6465 t/s
+ ** Position  2432 + 128 tokens:  126.6595 t/s
+ ** Position  2560 + 128 tokens:  125.8847 t/s
+ ** Position  2688 + 128 tokens:  125.0327 t/s
+ ** Position  2816 + 128 tokens:  124.1391 t/s
+ ** Position  2944 + 128 tokens:  122.2400 t/s
+ ** Position  3072 + 128 tokens:  121.5758 t/s
+ ** Position  3200 + 128 tokens:  120.2344 t/s
+ ** Position  3328 + 128 tokens:  119.8520 t/s
+ ** Position  3456 + 128 tokens:  118.3939 t/s
+ ** Position  3584 + 128 tokens:  118.1101 t/s
+ ** Position  3712 + 128 tokens:  116.0609 t/s
+ ** Position  3840 + 128 tokens:  115.6753 t/s
+ ** Position  3968 + 128 tokens:  114.1314 t/s

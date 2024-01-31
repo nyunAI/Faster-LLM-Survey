@@ -1,0 +1,30 @@
+TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+ -- Tokenizer: exports/Llama-2-7b-hf/quant/gptq/q4_128g/tokenizer.model
+ -- Model config: exports/Llama-2-7b-hf/quant/gptq/q4_128g/config.json
+ -- Model: exports/Llama-2-7b-hf/quant/gptq/q4_128g/model.safetensors
+ -- Sequence length: 2048
+ -- Tuning:
+ -- --sdp_thd: 8
+ -- --matmul_recons_thd: 8
+ -- --fused_mlp_thd: 2
+ -- Options: ['gpu_split: 40', 'perf']
+ ** Time, Load model: 2.10 seconds
+ ** Time, Load tokenizer: 0.01 seconds
+ -- Groupsize (inferred): 128
+ -- Act-order (inferred): yes
+ ** VRAM, Model: [cuda:0] 3,638.47 MB
+ ** VRAM, Cache: [cuda:0] 1,024.00 MB
+ -- Warmup pass 1...
+ ** Time, Warmup: 0.12 seconds
+ -- Warmup pass 2...
+ ** Time, Warmup: 0.02 seconds
+ -- Inference, first pass.
+ ** Time, Inference: 0.03 seconds
+ ** Speed: 3840.75 tokens/second
+ -- Generating 128 tokens, 128 token prompt...
+ ** Speed: 77.10 tokens/second
+ -- Generating 128 tokens, 4 token prompt...
+ ** Speed: 79.27 tokens/second
+ ** VRAM, Inference: [cuda:0] 16.65 MB
+ ** VRAM, Total: [cuda:0] 4,679.12 MB

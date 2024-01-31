@@ -2,6 +2,6 @@
 
 *cache/
 wandb/
-
+exports/
 # gptq quantized model paths
 *128g/

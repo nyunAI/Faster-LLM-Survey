@@ -1,0 +1,28 @@
+TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+ -- Perplexity:
+ -- - Dataset: engine/exllama/exllama/datasets/wikitext2_val_sample.jsonl
+ -- - Chunks: 100
+ -- - Chunk size: 2048 -> 2048
+ -- - Chunk overlap: 0
+ -- - Min. chunk size: 50
+ -- - Key: text
+f -- - Per-token mode
+ -- Tokenizer: exports/Llama-2-7b-hf/quant/gptq/q4_128g/tokenizer.model
+ -- Model config: exports/Llama-2-7b-hf/quant/gptq/q4_128g/config.json
+ -- Model: exports/Llama-2-7b-hf/quant/gptq/q4_128g/model.safetensors
+ -- Sequence length: 2048
+ -- Tuning:
+ -- --sdp_thd: 8
+ -- --matmul_recons_thd: 8
+ -- --fused_mlp_thd: 2
+ -- Options: ['gpu_split: 40', 'perplexity', 'perplexity_token']
+ ** Time, Load model: 2.06 seconds
+ ** Time, Load tokenizer: 0.01 seconds
+ -- Groupsize (inferred): 128
+ -- Act-order (inferred): yes
+ ** VRAM, Model: [cuda:0] 3,638.47 MB
+ ** VRAM, Cache: [cuda:0] 1,024.00 MB
+ -- Loading dataset...
+ -- Testing 100 chunks..........
+ ** Perplexity: 6.0972

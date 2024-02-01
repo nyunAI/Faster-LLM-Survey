@@ -32,3 +32,6 @@
 	path = engine/tensorrtllm/tensorrtllm
 	url = https://github.com/NVIDIA/TensorRT-LLM.git
 	branch = release/0.5.0
+[submodule "quant/omniquant/gptq"]
+	path = quant/omniquant/gptq
+	url = https://github.com/PanQiWei/AutoGPTQ.git

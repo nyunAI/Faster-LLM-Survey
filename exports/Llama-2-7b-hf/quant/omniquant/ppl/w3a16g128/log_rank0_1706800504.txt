@@ -1,0 +1,38 @@
+[2024-02-01 15:15:04 root] (cal_ppl.py 228): INFO Namespace(model='model/Llama-2-7b-hf', cache_dir='./cache', output_dir='exports/Llama-2-7b-hf/quant/omniquant/ppl/w3a16g128', save_dir=None, resume='exports/Llama-2-7b-hf/quant/omniquant/pretrained/Llama-2-7b-w3a16g128.pth', real_quant=False, calib_dataset='wikitext2', nsamples=128, batch_size=1, seed=2, tasks='', eval_ppl=True, num_fewshot=0, wbits=3, abits=16, group_size=128, alpha=0.5, let_lr=0.005, lwc_lr=0.01, wd=0, epochs=0, let=False, lwc=True, aug_loss=False, symmetric=False, a_dynamic_method='per_token', w_dynamic_method='per_channel', limit=-1, multigpu=False, deactive_amp=False, attn_implementation='eager', net=None, act_scales=None, act_shifts=None)
+[2024-02-01 15:15:05 root] (cal_ppl.py 293): INFO === start quantization ===
+[2024-02-01 15:15:05 root] (cal_ppl.py 299): INFO load calibration from ./cache/dataloader_Llama_wikitext2_128.cache
+[2024-02-01 15:15:05 root] (omniquant.py 47): INFO Starting ...
+[2024-02-01 15:15:06 root] (omniquant.py 190): INFO === Start quantize layer 0 ===
+[2024-02-01 15:15:07 root] (omniquant.py 190): INFO === Start quantize layer 1 ===
+[2024-02-01 15:15:07 root] (omniquant.py 190): INFO === Start quantize layer 2 ===
+[2024-02-01 15:15:07 root] (omniquant.py 190): INFO === Start quantize layer 3 ===
+[2024-02-01 15:15:08 root] (omniquant.py 190): INFO === Start quantize layer 4 ===
+[2024-02-01 15:15:08 root] (omniquant.py 190): INFO === Start quantize layer 5 ===
+[2024-02-01 15:15:08 root] (omniquant.py 190): INFO === Start quantize layer 6 ===
+[2024-02-01 15:15:09 root] (omniquant.py 190): INFO === Start quantize layer 7 ===
+[2024-02-01 15:15:09 root] (omniquant.py 190): INFO === Start quantize layer 8 ===
+[2024-02-01 15:15:10 root] (omniquant.py 190): INFO === Start quantize layer 9 ===
+[2024-02-01 15:15:10 root] (omniquant.py 190): INFO === Start quantize layer 10 ===
+[2024-02-01 15:15:10 root] (omniquant.py 190): INFO === Start quantize layer 11 ===
+[2024-02-01 15:15:11 root] (omniquant.py 190): INFO === Start quantize layer 12 ===
+[2024-02-01 15:15:11 root] (omniquant.py 190): INFO === Start quantize layer 13 ===
+[2024-02-01 15:15:11 root] (omniquant.py 190): INFO === Start quantize layer 14 ===
+[2024-02-01 15:15:12 root] (omniquant.py 190): INFO === Start quantize layer 15 ===
+[2024-02-01 15:15:12 root] (omniquant.py 190): INFO === Start quantize layer 16 ===
+[2024-02-01 15:15:12 root] (omniquant.py 190): INFO === Start quantize layer 17 ===
+[2024-02-01 15:15:13 root] (omniquant.py 190): INFO === Start quantize layer 18 ===
+[2024-02-01 15:15:13 root] (omniquant.py 190): INFO === Start quantize layer 19 ===
+[2024-02-01 15:15:13 root] (omniquant.py 190): INFO === Start quantize layer 20 ===
+[2024-02-01 15:15:14 root] (omniquant.py 190): INFO === Start quantize layer 21 ===
+[2024-02-01 15:15:14 root] (omniquant.py 190): INFO === Start quantize layer 22 ===
+[2024-02-01 15:15:14 root] (omniquant.py 190): INFO === Start quantize layer 23 ===
+[2024-02-01 15:15:15 root] (omniquant.py 190): INFO === Start quantize layer 24 ===
+[2024-02-01 15:15:15 root] (omniquant.py 190): INFO === Start quantize layer 25 ===
+[2024-02-01 15:15:16 root] (omniquant.py 190): INFO === Start quantize layer 26 ===
+[2024-02-01 15:15:16 root] (omniquant.py 190): INFO === Start quantize layer 27 ===
+[2024-02-01 15:15:16 root] (omniquant.py 190): INFO === Start quantize layer 28 ===
+[2024-02-01 15:15:17 root] (omniquant.py 190): INFO === Start quantize layer 29 ===
+[2024-02-01 15:15:17 root] (omniquant.py 190): INFO === Start quantize layer 30 ===
+[2024-02-01 15:15:17 root] (omniquant.py 190): INFO === Start quantize layer 31 ===
+[2024-02-01 15:15:18 root] (cal_ppl.py 322): INFO 13.247740507125854
+[2024-02-01 15:23:10 root] (cal_ppl.py 116): INFO Perplexity (auto_gptq.utils.Perplexity): 6.656012771453326

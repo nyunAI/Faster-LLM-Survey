@@ -22,39 +22,68 @@ start_mem_tracker() {
 SCALE_PATH=$METHOD_EXPORTS/act_scales
 SHIFT_PATH=$METHOD_EXPORTS/act_shifts
 
-start_mem_tracker "activation_scales_shifts"
-python $METHOD_PATH/generate_act_scale_shift.py \
---model $MODEL_PATH  \
---scales-output-path $SCALE_PATH \
---shifts-output-path $SHIFT_PATH \
---calib_dataset wikitext2
-killall nvidia-smi
+# start_mem_tracker "activation_scales_shifts"
+# python $METHOD_PATH/generate_act_scale_shift.py \
+# --model $MODEL_PATH  \
+# --scales-output-path $SCALE_PATH \
+# --shifts-output-path $SHIFT_PATH \
+# --calib_dataset wikitext2
+# killall nvidia-smi
 
 # generate quantized model
-# W4A16
-MODEL_W4A16=$METHOD_EXPORTS/w4a16
-start_mem_tracker "quantize_w4a16"
+
+# W4A16G128
+MODEL_W4A16G128=$METHOD_EXPORTS/w4a16g128
+start_mem_tracker "quantize_w4a16g128"
 python $METHOD_PATH/main.py \
 --model $MODEL_PATH \
---epochs 1 \
---output_dir $MODEL_W4A16 \
---save_dir $MODEL_W4A16 \
+--epochs 20 \
+--output_dir $MODEL_W4A16G128 \
+--save_dir $MODEL_W4A16G128 \
 --calib_dataset wikitext2 \
 --act-scales $SCALE_PATH \
 --act-shifts $SHIFT_PATH \
 --wbits 4 --abits 16 --lwc
 killall nvidia-smi
 
-# W3A16
-MODEL_W3A16=$METHOD_EXPORTS/w3a16
-start_mem_tracker "quantize_w3a16"
+# W3A16G128
+MODEL_W3A16G128=$METHOD_EXPORTS/w3a16g128
+start_mem_tracker "quantize_w3a16g128"
 python $METHOD_PATH/main.py \
 --model $MODEL_PATH \
---epochs 1 \
---output_dir $MODEL_W3A16 \
---save_dir $MODEL_W3A16 \
+--epochs 20 \
+--output_dir $MODEL_W3A16G128 \
+--save_dir $MODEL_W3A16G128 \
 --calib_dataset wikitext2 \
 --act-scales $SCALE_PATH \
 --act-shifts $SHIFT_PATH \
 --wbits 3 --abits 16 --lwc
 killall nvidia-smi
+
+# # W4A16
+# MODEL_W4A16=$METHOD_EXPORTS/w4a16
+# start_mem_tracker "quantize_w4a16"
+# python $METHOD_PATH/main.py \
+# --model $MODEL_PATH \
+# --epochs 1 \
+# --output_dir $MODEL_W4A16 \
+# --save_dir $MODEL_W4A16 \
+# --calib_dataset wikitext2 \
+# --act-scales $SCALE_PATH \
+# --act-shifts $SHIFT_PATH \
+# --wbits 4 --abits 16 --lwc
+# killall nvidia-smi
+
+# # W3A16
+# MODEL_W3A16=$METHOD_EXPORTS/w3a16
+# start_mem_tracker "quantize_w3a16"
+# python $METHOD_PATH/main.py \
+# --model $MODEL_PATH \
+# --epochs 1 \
+# --output_dir $MODEL_W3A16 \
+# --save_dir $MODEL_W3A16 \
+# --calib_dataset wikitext2 \
+# --act-scales $SCALE_PATH \
+# --act-shifts $SHIFT_PATH \
+# --wbits 3 --abits 16 --lwc
+# killall nvidia-smi
